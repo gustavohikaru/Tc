@@ -5,16 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Aluno extends Model
+class Psicologos extends Model
 {
-    protected $primaryKey = 'matricula';
-    public $incrementing = false;
-
+    protected $primaryKey = 'idpsicologa';
     protected $fillable = [
-        'matricula',
         'nome',
-        'datadenascimento',
-        'email',
+     
     ];
-
 }
