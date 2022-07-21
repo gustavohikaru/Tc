@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
+Route::post('/company', 'App\Http\Controllers\AlunoController@StoreCreate')->name('company');
+Route::get('/alunos', 'App\Http\Controllers\AlunoController@Index')->name('Alunos');
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });

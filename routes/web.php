@@ -20,5 +20,5 @@ Route::get('/', function () {
 //Route::get('/', 'App\Http\Controllers\HomeController@index')->name('home');
 //Route::get('/company', 'App\Http\Controllers\HomeController@company')->name('company');
 Route::get('/', 'App\Http\Controllers\AlunoController@index')->name('home');
-Route::get('/company', 'App\Http\Controllers\AlunoController@StoreCreate')->name('company');
+Route::post('/company', 'App\Http\Controllers\AlunoController@StoreCreate')->name('company');
 
